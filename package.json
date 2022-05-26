@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ethers": "^5.5.4",
+    "requirejs": "^2.3.6"
+  },
+  "engines": {
+    "node": "16.14.0"
+  }
+}
