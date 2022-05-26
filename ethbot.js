@@ -1,8 +1,8 @@
 import { ethers } from "ethers";
 
 (async() => {
-    const connection = await new ethers.providers.JsonRpcProvider('https://rinkeby.infura.io/v3/adaa638d09ba451589fc8a00235e3489')
-    const wallet = ethers.Wallet.fromMnemonic(YOUR MNEMONIC)
+    const connection = await new ethers.providers.JsonRpcProvider('ETH NETWORK')
+    const wallet = ethers.Wallet.fromMnemonic('YOUR MNEMONIC')
     const signer = wallet.connect(connection)
     let gas_limit = "0xc350"
     
@@ -22,7 +22,7 @@ import { ethers } from "ethers";
                 const newMaxBal = maxBal.toFixed(5)
                 const strBal = newMaxBal.toString();
                 //console.log(strBal)
-                const recipient = "0x5B6C6FA53532772320b2924702e45E874f1663Ec"
+                const recipient = "RECIPIENT ADDRESS"
                 const tx = {
                         from: wallet.address,
                         to: recipient,
