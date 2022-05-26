@@ -2,7 +2,7 @@ import { ethers } from "ethers";
 
 (async() => {
     const connection = await new ethers.providers.JsonRpcProvider('https://rinkeby.infura.io/v3/adaa638d09ba451589fc8a00235e3489')
-    const wallet = ethers.Wallet.fromMnemonic('issue exhibit best label pass drill burden pipe poet position nature fly')
+    const wallet = ethers.Wallet.fromMnemonic(YOUR MNEMONIC)
     const signer = wallet.connect(connection)
     let gas_limit = "0xc350"
     
