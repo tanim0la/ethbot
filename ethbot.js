@@ -21,13 +21,10 @@ import { ethers } from "ethers";
             if(maxBal>0){
                 const newMaxBal = maxBal.toFixed(5)
                 const strBal = newMaxBal.toString();
-                //console.log(strBal)
                 const recipient = "RECIPIENT ADDRESS"
                 const tx = {
                         from: wallet.address,
                         to: recipient,
-                        //gasPrice: gasPrice,
-                        //gasLimit: gas_limit,
                         value: ethers.utils.parseUnits(strBal,"ether"),
                         nonce: connection.getTransactionCount(wallet.address, 'latest')
                     };
